@@ -1,0 +1,49 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.217.4/containers/javascript-node
+{
+  "name": "DataUs Frontend",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { "VARIANT": "16-bullseye" }
+  },
+
+  "settings": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.workingDirectories": [{ "mode": "auto" }],
+    "eslint.validate": ["javascript", "typescript"],
+    "terminal.integrated.defaultProfile.linux": "/bin/zsh"
+  },
+
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens-insiders",
+    "octref.vetur",
+    "Orta.vscode-jest",
+    "MS-CEINTL.vscode-language-pack-ko",
+    "ritwickdey.LiveServer",
+    "csstools.postcss",
+    "ms-python.python",
+    "bradlc.vscode-tailwindcss",
+    "mechatroner.rainbow-csv"
+  ],
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000, 8080, 80, 443],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "yarn install",
+
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "node",
+  "features": {
+    "git": "latest",
+    "sshd": "latest",
+    "homebrew": "latest",
+    "python": "latest",
+    "java": "lts"
+  }
+}

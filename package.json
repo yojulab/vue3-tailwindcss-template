@@ -1,0 +1,40 @@
+{
+  "name": "vue3-tailwind",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^1.0.5",
+    "core-js": "^3.8.3",
+    "vue": "^3.2.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0-rc.2",
+    "@vue/cli-plugin-eslint": "~5.0.0-rc.2",
+    "@vue/cli-plugin-unit-jest": "~5.0.0-rc.2",
+    "@vue/cli-service": "~5.0.0-rc.2",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "autoprefixer": "^10.4.2",
+    "babel-jest": "^27.0.6",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^26.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.4.1",
+    "eslint-plugin-vuejs-accessibility": "^1.1.0",
+    "jest": "^27.0.5",
+    "postcss": "^8.4.6",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.19"
+  }
+}
